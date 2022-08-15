@@ -1,0 +1,423 @@
+//                       for (i = 0; i < logLinkedList.size(); i++) {
+//                           if (updatedID == logLinkedList.get(i).getId()) {
+//                               System.out.println("Güncellemek istediğiniz kısmı seçiniz \n" +
+//                                       "1- log type \n" +
+//                                       "2- log level \n" +
+//                                       "3- details  \n");
+//                               int updateChose = scanner.nextInt();
+//                               if (updateChose == 1) {
+//                                   boolean a = true;
+//                                   while (a) {
+//                                       System.out.println("Yeni log type seçimi yapınız");
+//                                       System.out.println("Log type seçiniz \n 1- CREATED \n 2- UPDATED \n 3- DELETED \n 4- READ \n 5- LOG IN \n 6- LOG OUT");
+//                                       int newLogtype = scanner.nextInt();
+//                                       while (true) {
+//                                           if (newLogtype <= 1 || newLogtype <= 6) {
+//                                               break;
+//                                           } else {
+//                                               System.out.println("lütfen bir altı aralığında seçim yapınız");
+//                                           }
+//                                       }
+//                                       switch (newLogtype) {
+//                                           case 1:
+//                                               logLinkedList.get(i).setLogType(LogType.Created);
+//                                               //logLinkedList.get(i).logType = userLog.logType;
+//                                               break;
+//                                           case 2 :
+//                                           logLinkedList.get(i).setLogType(LogType.Updated);
+//                                           break;
+//                                           case 3 :
+//                                           logLinkedList.get(i).setLogType(LogType.Deleted);
+//                                           break;
+//                                           case 4 :
+//                                           logLinkedList.get(i).setLogType(LogType.Read);
+//                                           break;
+//                                           case 5 :
+//                                           logLinkedList.get(i).setLogType(LogType.Login);
+//                                           break;
+//                                           case 6 :
+//                                           logLinkedList.get(i).setLogType(LogType.Logout);
+//                                           break;
+//                                   }
+//                                       a = false;
+//                                   }
+//                               }
+//                               if (updateChose == 2) {
+//                                   boolean b = true;
+//                                   while (b) {
+//                                       Scanner sc = new Scanner(System.in);
+//                                       System.out.println("Yeni  log leveli seçiniz.  \n 1- TRACE \n 2- DEBUG \n 3- INFO \n 4- WARNING \n 5- ERROR \n 6- FATAL");
+//                                       int log_level = sc.nextInt();
+//                                       while (true) {
+//                                           if (log_level <= 1 || log_level <= 6) {
+//                                               break;
+//                                           } else {
+//                                               System.out.println("lütfen bir altı aralığında seçim yapınız");
+//                                           }
+//                                       }
+//                                       switch (log_level) {
+//                                           case 1:
+//                                               logLinkedList.get(i).setLogLevel(LogLevel.Trace);
+//                                               break;
+//                                           case 2:
+//                                               logLinkedList.get(i).setLogLevel(LogLevel.Debug);
+//                                               break;
+//                                           case 3 :
+//                                               logLinkedList.get(i).setLogLevel(LogLevel.Info);
+//                                               break;
+//                                               case 4 :
+//                                               logLinkedList.get(i).setLogLevel(LogLevel.Warning);
+//                                               break;
+//                                           case 5 :
+//                                               logLinkedList.get(i).setLogLevel(LogLevel.Error);
+//                                               break;
+//                                           case 6 :
+//                                               logLinkedList.get(i).setLogLevel(LogLevel.Fatal);
+//                                               break;
+//                                       }
+//                                       b = false;
+//                                   }
+//                               }
+//                               if (updateChose == 3) {
+//                                   boolean c = true;
+//                                   while (c) {
+//                                       System.out.println("Yeni detay ifadenizi giriniz");
+//                                       Scanner sc = new Scanner(System.in);
+//                                       String newDetail = sc.nextLine();
+//                                       logLinkedList.get(i).setDetail(newDetail) ;
+//                                       c = false;
+//                                   }
+//                               }
+//                               x = false;
+//                           }
+//                           else {
+//                               System.out.println("listede böyle bir id yok");
+//                           }
+//                       }
+//                   } catch (Exception e){
+//                       System.out.println("geçerli ifadeyi giriniz");
+//                   }
+//               }
+//           }
+                                                  //UPDATE
+
+//                System.out.println("Yeni log type seçimi yapınız");
+//                System.out.println("Log type seçiniz \n 1- CREATED \n 2- UPDATED \n 3- DELETED \n 4- READ \n 5- LOG IN \n 6- LOG OUT");
+//                int newLogtype = scanner.nextInt();
+//                while (true) {
+//                    if (newLogtype <= 1 || newLogtype <= 6) {
+//                        break;
+//                    } else {
+//                        System.out.println("lütfen bir altı aralığında seçim yapınız");
+//                    }
+//                }
+//                switch (newLogtype) {
+//                    case 1:
+//                        logHashMap.replace(updatedID, logHashMap.get(updatedID).setLogType(LogType.Created));
+//                        break;
+//                    case 2:
+//                        logHashMap.replace(updatedID, logHashMap.get(updatedID).setLogType(LogType.Updated));
+////                                           logLinkedList.get(i).setLogType(LogType.Updated);
+//                        break;
+//                    case 3:
+//                        logHashMap.replace(updatedID, logHashMap.get(updatedID).setLogType(LogType.Deleted));
+//                        break;
+//                    case 4:
+//                        logHashMap.replace(updatedID, logHashMap.get(updatedID).setLogType(LogType.Read));
+//                        break;
+//                    case 5:
+//                        logHashMap.replace(updatedID, logHashMap.get(updatedID).setLogType(LogType.Login));
+//                        break;
+//                    case 6:
+//                        logHashMap.replace(updatedID, logHashMap.get(updatedID).setLogType(LogType.Logout));
+//                        break;
+//                }
+
+                       Show log
+
+//               for (int i = 0; i < logLinkedList.size(); i++) {
+//                   if (showLog == logLinkedList.get(i).getId()) {
+//                       System.out.println(logLinkedList.get(i).toString());
+//                   }
+//               }
+//    public void createLog() {
+//
+//        DevLog devLog = new DevLog();
+//        UserLog userLog = new UserLog();
+//        int choseWho;
+//        //******************************** USER / DEV SEÇME **************************************************
+//        System.out.println("User mısınız developer mısınız? \n 1-USER \n 2-DEVELOPER ");
+//        while (true) {
+//            try {
+//                while (true) {
+//                    Scanner sc = new Scanner(System.in);
+//                    choseWho = sc.nextInt();
+//                    if (choseWho == 1 || choseWho == 2) {
+//                        break;
+//                    } else {
+//                        System.out.println("1 veya 2 sayılarını girebiliriniz");
+//                    }
+//                }
+//                break;
+//            } catch (Exception exception) {
+//                System.out.println("Lütfen 1 veya 2 değerlerinden birisini giriniz.");
+//            }
+//        }
+//        if (choseWho == 1) {
+//            Scanner scanner2 = new Scanner(System.in);
+//            while (true) {
+//                try {
+//                    Scanner scanner1 = new Scanner(System.in);
+//                    System.out.println("Kullanıcı id giriniz");
+//                    userLog.setUserID(scanner1.nextInt());
+//                    break;
+//                } catch (InputMismatchException exception) {
+//                    System.out.println("ID için bir sayı değeri giriniz");
+//                }
+//            }
+//            //--------------------------LOG ID----------------------------------------------------------
+//            boolean a = true;
+//            while (a) {
+//                int logID;
+//                Scanner scan = new Scanner(System.in);
+//                if (logHashMap.size() > 0) {
+//                    System.out.println("Log id giriniz");
+//                    logID = scan.nextInt();
+//                    if (logHashMap.containsKey(logID)) {
+//                        System.out.println("Böyle bir id var ");
+//                    } else {
+//                        userLog.setId(logID);
+//                        a = false;
+//                    }
+//                } else {
+//                    System.out.println("Log id giriniz");
+//                    logID = scanner2.nextInt();
+//                    userLog.setId(logID);
+//                    a = false;
+//                }
+//            }
+//            //-------------------------------LOG TYPE------------------------------------------------------
+//            while (true) {
+//                Scanner scan = new Scanner(System.in);
+//                try {
+//                    System.out.println("Log type seçiniz \n 1- CREATED \n 2- UPDATED \n 3- DELETED \n 4- READ \n 5- LOG IN \n 6- LOG OUT");
+//                    int log_type;
+//                    while (true) {
+//                        log_type = scan.nextInt();
+//
+//                        if (log_type <= 1 || log_type <= 6) {
+//                            break;
+//                        } else {
+//                            System.out.println("lütfen bir altı aralığında seçim yapınız");
+//                        }
+//                    }
+//                    switch (log_type) {
+//                        case 1:
+//                            userLog.setLogType(LogType.Created);
+//                            break;
+//                        case 2:
+//                            userLog.setLogType(LogType.Updated);
+//                            break;
+//                        case 3:
+//                            userLog.setLogType(LogType.Deleted);
+//                            break;
+//                        case 4:
+//                            userLog.setLogType(LogType.Read);
+//                            break;
+//                        case 5:
+//                            userLog.setLogType(LogType.Login);
+//                            break;
+//                        case 6:
+//                            userLog.setLogType(LogType.Logout);
+//                            break;
+//                    }
+//                    break;
+//                } catch (InputMismatchException ex) {
+//                    System.out.println("Mevcut log type girişini sağlayamadınız , tekrar deneyin");
+//                }
+//            }
+//            //----------------------------LOG LEVEL------------------------------------------
+//            while (true) {
+//                try {
+//                    Scanner scanner1 = new Scanner(System.in);
+//                    System.out.println("Log Level seçiniz \n 1- TRACE \n 2- DEBUG \n 3- INFO \n 4- WARNING \n 5- ERROR \n 6- FATAL");
+//                    int log_level;
+//                    while (true) {
+//                        log_level = scanner1.nextInt();
+//                        if (log_level <= 1 || log_level <= 6) {
+//                            break;
+//                        } else {
+//                            System.out.println("lütfen bir altı aralığında seçim yapınız");
+//                        }
+//                    }
+//                    switch (log_level) {
+//                        case 1:
+//                            userLog.setLogLevel(LogLevel.Trace);
+//                            break;
+//
+//                        case 2:
+//                            userLog.setLogLevel(LogLevel.Debug);
+//                            break;
+//                        case 3:
+//                            userLog.setLogLevel(LogLevel.Info);
+//                            break;
+//                        case 4:
+//                            userLog.setLogLevel(LogLevel.Warning);
+//                            break;
+//                        case 5:
+//                            userLog.setLogLevel(LogLevel.Error);
+//                            break;
+//                        case 6:
+//                            userLog.setLogLevel(LogLevel.Fatal);
+//                            break;
+//                    }
+//                    break;
+//                } catch (InputMismatchException ex) {
+//                    System.out.println("Menüde mevcut olmayan bir giriş gerçekleştirdiniz, tekrar deneyin");
+//                }
+//            }
+//            //----------------------------LOG DETAIL--------------------------------------------------
+//            System.out.println("Detay ifadenizi giriniz");
+//            Scanner sc = new Scanner(System.in);
+//            userLog.setDetail(sc.nextLine());
+//            //logLinkedList.add(userLog);
+//            logHashMap.put(userLog.getId(), userLog);
+//
+//        }
+//        if (choseWho == 2) {
+//            Scanner scanner1 = new Scanner(System.in);
+//            System.out.println("Developer ismi giriniz");
+//            devLog.setDevName(scanner1.nextLine());
+//
+//            //--------------------------LOG ID----------------------------------------------------------
+//            boolean a = true;
+//            while (a) {
+//                int logID;
+//                Scanner scanner2 = new Scanner(System.in);
+//                if (logHashMap.size() > 0) {
+//                    System.out.println("Log id giriniz");
+//                    logID = scanner2.nextInt();
+//                    if (logHashMap.containsKey(logID)) {
+//                        System.out.println("Böyle bir id var ");
+//                    } else {
+//                        devLog.setId(logID);
+//                        a = false;
+//                    }
+//                } else {
+//                    System.out.println("Log id giriniz");
+//                    logID = scanner2.nextInt();
+//                    devLog.setId(logID);
+//                    a = false;
+//                }
+//            }
+//            //-------------------------------LOG TYPE------------------------------------------------------
+//            while (true) {
+//                try {
+//                    Scanner scanner2 = new Scanner(System.in);
+//                    System.out.println("Log type seçiniz \n 1- CREATED \n 2- UPDATED \n 3- DELETED \n 4- READ \n 5- LOG IN \n 6- LOG OUT");
+//                    int log_type = scanner2.nextInt();
+//                    boolean z = true;
+//                    while (z) {
+//                        if (log_type <= 1 || log_type <= 6) {
+//                            z = false;
+//                        } else {
+//                            System.out.println("lütfen bir altı aralığında seçim yapınız");
+//                            z = true;
+//                        }
+//                    }
+//                    switch (log_type) {
+//                        case 1:
+//                            devLog.setLogType(LogType.Created);
+//                            break;
+//                        case 2:
+//                            devLog.setLogType(LogType.Updated);
+//                            break;
+//                        case 3:
+//                            devLog.setLogType(LogType.Deleted);
+//                            break;
+//
+//                        case 4:
+//                            devLog.setLogType(LogType.Read);
+//                            break;
+//                        case 5:
+//                            devLog.setLogType(LogType.Login);
+//                            break;
+//
+//                        case 6:
+//                            devLog.setLogType(LogType.Logout);
+//                            break;
+//                    }
+//                    break;
+//                } catch (InputMismatchException e) {
+//                    System.out.println("Menüde mevcut olmayan bir giriş gerçekleştirdiniz, tekrar deneyin");
+//                }
+//            }
+//            //----------------------------LOG LEVEL------------------------------------------
+//            while (true) {
+//                try {
+//                    Scanner scanner2 = new Scanner(System.in);
+//                    System.out.println("Log Level seçiniz \n 1- TRACE \n 2- DEBUG \n 3- INFO \n 4- WARNING \n 5- ERROR \n 6- FATAL");
+//                    int log_level = scanner2.nextInt();
+//                    boolean x = true;
+//                    while (x) {
+//                        if (log_level <= 1 || log_level <= 6) {
+//                            x = false;
+//                        } else {
+//                            System.out.println("lütfen bir altı aralığında seçim yapınız");
+//                            x = true;
+//                        }
+//                    }
+//                    switch (log_level) {
+//                        case 1:
+//                            devLog.setLogLevel(LogLevel.Trace);
+//                            break;
+//
+//                        case 2:
+//                            devLog.setLogLevel(LogLevel.Debug);
+//                            break;
+//                        case 3:
+//                            devLog.setLogLevel(LogLevel.Info);
+//                            break;
+//                        case 4:
+//                            devLog.setLogLevel(LogLevel.Warning);
+//                            break;
+//                        case 5:
+//                            devLog.setLogLevel(LogLevel.Error);
+//                            break;
+//                        case 6:
+//                            devLog.setLogLevel(LogLevel.Fatal);
+//                            break;
+//                    }
+//                    break;
+//                } catch (InputMismatchException e) {
+//                    System.out.println("Menüde mevcut olmayan bir giriş gerçekleştirdiniz, tekrar deneyin");
+//                }
+//            }
+//            //----------------------------LOG DETAIL--------------------------------------------------
+//            System.out.println("Detay ifadenizi giriniz");
+//            Scanner scanner2 = new Scanner(System.in);
+//            devLog.setDetail(scanner2.nextLine());
+//            //--------------------------- LİSTE YAZDIRMA -------------------------------------------------
+//            logHashMap.put(devLog.getId(), devLog);
+//        }
+//    }
+
+                     log classı içinde
+//    System.out.println("Kullanıcı id giriniz");
+//    int userid = scanner2.nextInt();
+//                    if (logLinkedList.size() > 0) {
+//        for (Log log : logLinkedList) {
+//            if (log instanceof UserLog) {
+//                if (((UserLog) log).userID == userid) {
+//                    System.out.println("Bu ID'ye sahip kullanıcı bulunmaktadır, tekrar deneyin.");
+//                    break;
+//                } else {
+//                    userLog.userID = userid;
+//                }
+//            }
+//            break;
+//        }
+//    }
+//                    else {
+//        userLog.userID = userid;
+//    } break;
